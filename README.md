@@ -1,2 +1,11 @@
 # Turnstile-Project
 This is a research based project that explores power generation using turnstile and doubly-fed induction generator based system.
+This repository contains 3 files.
+Two of the files are matlab codes and the third one is the simulink simulation file.
+The files are named as "mechanical_simulation.m", "electrical_simulation.m", and "simulation.slx".
+To run this, open "mechanical_simulation.m" and run the segment of the code ignoring the commented code.
+This will create data for the simulink file. Next, open "simulation.slx" and simply run the simulation.
+You would be able to see the active power waveform in Scope 14.
+Log the data from this scope and store it as an array back to the workspace.
+Now, open "electrical_simulation.m" and from the workspace open the "out" dataset and delete the entire first column of the variable that you logged the data in.
+You can simply run this file now and see the average power generated for the mechanical speed profile you observed in "mechanical_simulation.m".
